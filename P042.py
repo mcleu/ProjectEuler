@@ -24,7 +24,7 @@ def readfile(filename):
     outname = [name.strip('"') for name in names]
     return outname
 
-words = readfile('P42words.txt')
+words = readfile('P042words.txt')
 
 def GetPoints(Word):
     Word = Word.upper()

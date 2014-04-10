@@ -27,7 +27,7 @@ def readfile(filename):
     outname.sort()
     return outname
 
-Names = readfile('P22name.txt')
+Names = readfile('P022name.txt')
 
 def GetPoints(Name):
     Name = Name.upper()

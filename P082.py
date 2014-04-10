@@ -36,7 +36,7 @@ def readfile(filename):
         Trig.append(data)
     return Trig
 
-Matrix = readfile('P81matrix.txt')
+Matrix = readfile('P081matrix.txt')
 M = np.array(Matrix)
 
 # S is a 2D array of size M which will contain the cheapest cost to get

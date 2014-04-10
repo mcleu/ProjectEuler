@@ -48,7 +48,7 @@ def readfile(filename):
         Trig.append(data)
     return Trig
 
-TrigA = readfile('P67tri.txt')
+TrigA = readfile('P067tri.txt')
 
 
 length = len(TrigA)

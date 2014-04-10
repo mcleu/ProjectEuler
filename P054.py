@@ -56,7 +56,7 @@
 # How many hands does Player 1 win?
 #==============================================================================
 
-import P54Poker
+import P054Poker
 
 # Define function to import data files obtained from machine
 def PokerWinner(filename):
@@ -69,8 +69,8 @@ def PokerWinner(filename):
         P1_hand = line[0:5]
         P2_hand = line[5:10]
         #print P1_hand, P2_hand
-        if P54Poker.poker([P1_hand, P2_hand])==[P1_hand]:
+        if P054Poker.poker([P1_hand, P2_hand])==[P1_hand]:
             Wins += 1
     return Wins
 
-print PokerWinner('P54poker.txt')
+print PokerWinner('P054poker.txt')
