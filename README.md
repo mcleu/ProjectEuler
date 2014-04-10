@@ -6,6 +6,7 @@ Code Repo for all my project euler solutions.
 Learn more about Project Euler at http://projecteuler.net/
 
 [View my progress on Project Euler](http://projecteuler.net/profile/mcleung.png)
+
 ![My Progress](http://projecteuler.net/profile/mcleung.png)
 
 About me
