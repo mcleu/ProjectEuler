@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 07 12:20:15 2013
-
-@author: Michael
-"""
-
+#
+# Taken from Udacity
 # -----------
 # User Instructions
 #

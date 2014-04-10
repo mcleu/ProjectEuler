@@ -1,12 +1,14 @@
-"""
-The function lcm(a,b) denotes the least common multiple of a and b.
-Let A(n) be the average of the values of lcm(n,i) for 1<=i<=n.
-E.g: A(2)=(2+2)/2=2 and A(10)=(10+10+30+20+10+30+70+40+90+10)/10=32.
+# -*- coding: utf-8 -*-
+#==============================================================================
+# The function lcm(a,b) denotes the least common multiple of a and b.
+# Let A(n) be the average of the values of lcm(n,i) for 1<=i<=n.
+# E.g: A(2)=(2+2)/2=2 and A(10)=(10+10+30+20+10+30+70+40+90+10)/10=32.
+#
+# Let S(n)=SUM A(k) for 1<=k<=n.
+# S(100) 122726
+# Find S(99999999019) mod 999999017.
+#==============================================================================
 
-Let S(n)=SUM A(k) for 1<=k<=n.
-S(100) 122726
-Find S(99999999019) mod 999999017.
-"""
 
 from time import time
 import numpy as np
@@ -23,7 +25,7 @@ def lcm1(a, b):
 
 def gcd(a, b):
     """Return greatest common divisor using Euclid's Algorithm."""
-    while b:      
+    while b:
         a, b = b, a % b
     return a
 
@@ -82,7 +84,7 @@ def Sfast(nn):
             ii -= 1
         jj -= 1
     return newsum
-    
+
 def S2(nn):
     sum2 = 0
     jj = nn

@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-"""
-The number 3797 has an interesting property. Being prime itself,
-it is possible to continuously remove digits from left to right,
-and remain prime at each stage: 3797, 797, 97, and 7. Similarly
-we can work from right to left: 3797, 379, 37, and 3.
-
-Find the sum of the only eleven primes that are both truncatable
-from left to right and right to left.
-
-NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
-"""
+#==============================================================================
+# The number 3797 has an interesting property. Being prime itself,
+# it is possible to continuously remove digits from left to right,
+# and remain prime at each stage: 3797, 797, 97, and 7. Similarly
+# we can work from right to left: 3797, 379, 37, and 3.
+#
+# Find the sum of the only eleven primes that are both truncatable
+# from left to right and right to left.
+#
+# NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
+#==============================================================================
 
 import math
 import numpy as np
@@ -22,10 +22,10 @@ def isPrime(n):
     if n < 2:
         return False
     # 2 is the only even prime number
-    if n == 2: 
-        return True    
+    if n == 2:
+        return True
     # all other even numbers are not primes
-    if not n & 1: 
+    if not n & 1:
         return False
     # range starts with 3 and only needs to go up the squareroot of n
     # for all odd numbers

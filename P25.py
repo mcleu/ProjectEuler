@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #===============================================================================
 # The Fibonacci sequence is defined by the recurrence relation:
 # Fn = Fn1 + Fn2, where F1 = 1 and F2 = 1.
@@ -28,7 +29,7 @@ while 1:
     if len(str(a))>=1000:
         break
     # print n, a
-   
+
 
 print n
 

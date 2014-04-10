@@ -1,10 +1,12 @@
-"""
-We shall say that an n-digit number is pandigital if it makes
-use of all the digits 1 to n exactly once. For example, 2143
-is a 4-digit pandigital and is also prime.
+# -*- coding: utf-8 -*-
+#==============================================================================
+# We shall say that an n-digit number is pandigital if it makes
+# use of all the digits 1 to n exactly once. For example, 2143
+# is a 4-digit pandigital and is also prime.
+#
+# What is the largest n-digit pandigital prime that exists?
+#==============================================================================
 
-What is the largest n-digit pandigital prime that exists?
-"""
 
 import math
 import numpy as np
@@ -17,10 +19,10 @@ def isPrime(n):
     if n < 2:
         return False
     # 2 is the only even prime number
-    if n == 2: 
-        return True    
+    if n == 2:
+        return True
     # all other even numbers are not primes
-    if not n & 1: 
+    if not n & 1:
         return False
     # range starts with 3 and only needs to go up the squareroot of n
     # for all odd numbers

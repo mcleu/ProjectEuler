@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
-"""
-The number, 197, is called a circular prime because all rotations of
-the digits: 197, 971, and 719, are themselves prime.
+#==============================================================================
+# The number, 197, is called a circular prime because all rotations of
+# the digits: 197, 971, and 719, are themselves prime.
+#
+# There are thirteen such primes below 100:
+# 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.
+#
+# How many circular primes are there below one million?
+#==============================================================================
 
-There are thirteen such primes below 100:
-2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.
-
-How many circular primes are there below one million?
-"""
 
 import math
 import numpy as np
@@ -20,10 +21,10 @@ def isPrime(n):
     if n < 2:
         return False
     # 2 is the only even prime number
-    if n == 2: 
-        return True    
+    if n == 2:
+        return True
     # all other even numbers are not primes
-    if not n & 1: 
+    if not n & 1:
         return False
     # range starts with 3 and only needs to go up the squareroot of n
     # for all odd numbers
@@ -79,7 +80,7 @@ def isCirc(primes):
             for nn in range(n):
                 p1 = nextCirc(ptest, nn)
                 primes.index(p1)
-            
+
             circ.append(ptest)
         except:
 #            pass
