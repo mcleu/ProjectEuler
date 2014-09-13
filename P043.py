@@ -18,6 +18,9 @@
 
 import itertools as it
 
+def l2int(t):
+    return int(''.join([str(i) for i in t]))
+
 AllComb = it.permutations(['0','1','2','3','4','5','6','7','8','9'], 10)
 
 DivList = [2,3,5,7,11,13,17]
@@ -26,12 +29,11 @@ BigSum = 0
 for permut in AllComb:
     ii = 0
     while ii<7:
-        if not int(permut[1+ii]+permut[2+ii]+permut[3+ii]) % DivList[ii] == 0:
+        if not l2int(permut[ii:3+ii]) % DivList[ii] == 0:
             break
         ii += 1
     if ii==7:
-        BigSum += int(permut[0]+permut[1]+permut[2]+permut[3]+permut[4]+permut[5]+permut[6]+permut[7]+permut[8]+permut[9])
+        BigSum += l2int(permut)
 
 print(BigSum)
 # 16695334890
-
